@@ -7,6 +7,7 @@ using System.Web;
 
 namespace Project2WooxTravel.Entities
 {
+    //deneme
     public class Destination
     {
         public int DestinationId { get; set; }
