@@ -1,0 +1,41 @@
+﻿@model Project2WooxTravel.Entities.Admin
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+
+    <br /><br />
+
+    <div class="alert alert-primary">
+        <h3>New User Registration Page</h3>
+    </div>
+
+    <form method="post">
+        <label>Your Name</label>
+        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+        <br />
+
+        <label>Your Surname</label>
+        @Html.TextBoxFor(x => x.Surname, new { @class = "form-control" })
+        <br />
+
+        <label>Your Email Address</label>
+        @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+        <br />
+
+        <label>Your Username</label>
+        @Html.TextBoxFor(x => x.Username, new { @class = "form-control" })
+        <br />
+
+        <label>Your Password</label>
+        @Html.PasswordFor(x => x.Password, new { @class = "form-control" })
+        <br />
+
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+</div>
+
