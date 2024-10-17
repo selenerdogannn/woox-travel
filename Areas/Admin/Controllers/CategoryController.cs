@@ -13,7 +13,7 @@ namespace Project2WooxTravel.Areas.Admin.Controllers
         
         TravelContext context = new TravelContext();
 
-        
+        [Authorize]
         public ActionResult CategoryList()
         {
             
