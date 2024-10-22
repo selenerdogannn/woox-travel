@@ -18,5 +18,7 @@ namespace Project2WooxTravel.Context
 
         public DbSet<Admin> Admins { get; set; }
 
+        public DbSet<Message> Messages { get; set; }
+
     }
 }

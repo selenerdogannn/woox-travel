@@ -132,6 +132,7 @@
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\DefaultController.cs" />
     <Compile Include="Areas\Admin\Controllers\DestinationController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MessageController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProfileController.cs" />
     <Compile Include="Context\TravelContext.cs" />
     <Compile Include="Controllers\ErrorPagesController.cs" />
@@ -142,6 +143,7 @@
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Contact.cs" />
     <Compile Include="Entities\Destination.cs" />
+    <Compile Include="Entities\Message.cs" />
     <Compile Include="Entities\Reservation.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -173,6 +175,14 @@
     <Compile Include="Migrations\202410151847056_m9.cs" />
     <Compile Include="Migrations\202410151847056_m9.Designer.cs">
       <DependentUpon>202410151847056_m9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202410221735092_m6.cs" />
+    <Compile Include="Migrations\202410221735092_m6.Designer.cs">
+      <DependentUpon>202410221735092_m6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202410221745082_m71.cs" />
+    <Compile Include="Migrations\202410221745082_m71.Designer.cs">
+      <DependentUpon>202410221745082_m71.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -701,6 +711,9 @@
     <Content Include="Areas\Admin\Views\Default\PartialBanner.cshtml" />
     <Content Include="Areas\Admin\Views\Default\PartialCountry.cshtml" />
     <Content Include="Areas\Admin\Views\Default\PartialFooter.cshtml" />
+    <Content Include="Areas\Admin\Views\Message\Inbox.cshtml" />
+    <Content Include="Areas\Admin\Views\Message\SendBox.cshtml" />
+    <Content Include="Areas\Admin\Views\Message\SendMessage.cshtml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -794,6 +807,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202410151847056_m9.resx">
       <DependentUpon>202410151847056_m9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202410221735092_m6.resx">
+      <DependentUpon>202410221735092_m6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202410221745082_m71.resx">
+      <DependentUpon>202410221745082_m71.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
